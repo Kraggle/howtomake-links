@@ -1,0 +1,146 @@
+.ks-box {
+  position: relative;
+  margin: 20px 20px 20px 15px;
+}
+
+.ks-box .ks-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #529e58;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 20px;
+}
+
+.ks-box .ks-icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  fill: #fff;
+}
+
+.ks-box .ks-sub,
+.ks-box .ks-title {
+  font-size: 30px;
+  color: #fff;
+}
+
+.ks-box .ks-title {
+  margin: 0 25px;
+}
+
+.ks-box .ks-sub {
+  position: relative;
+}
+
+.ks-box .ks-sub::before {
+  content: '-';
+  position: absolute;
+  left: -18px;
+}
+
+.ks-box .ks-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #a1cea5;
+  padding: 20px;
+}
+
+.ks-box .ks-footer {
+  background-color: #529e58;
+  height: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.ks-box .ks-setting-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background-color: #529e58;
+  -webkit-box-shadow: 2px 5px 16px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 5px 16px 1px rgba(0, 0, 0, 0.7);
+}
+
+.ks-box .ks-setting-box .ks-name {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: #fff;
+}
+
+.ks-box .ks-setting-box .ks-input {
+  margin-left: 5px;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.ks-box .ks-setting-box .ks-input + .ks-name {
+  margin-top: 5px;
+}
+
+.ks-box .ks-setting-box .ks-desc {
+  font-size: 11px;
+  margin: 0 0 5px 5px;
+  line-height: 12px;
+  color: #ddd;
+}
+
+.ks-box .ks-multi-input {
+  background-color: #fff;
+  padding: 3px;
+}
+
+.ks-box .ks-multi-input .ks-input-box {
+  display: inline;
+  position: relative;
+  margin-right: 3px;
+}
+
+.ks-box .ks-multi-input .ks-input {
+  background-color: #a1cea5;
+}
+
+.ks-box .ks-multi-input .ks-remove {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  margin: 3px;
+  height: 20px;
+}
+
+@media (max-width: 1700px) {
+  .ks-box .ks-content {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .ks-box .ks-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .ks-box .ks-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=ks-admin.css.map */

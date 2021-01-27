@@ -1,0 +1,140 @@
+$main-color: rgb(82, 158, 88);
+$fade-color: lighten($main-color, 25%);
+$dark-color: darken($main-color, 10%);
+
+.ks-box {
+    position: relative;
+    margin: 20px 20px 20px 15px;
+
+    .ks-head {
+        display: flex;
+        align-items: center;
+        background-color: $main-color;
+        border-radius: 20px 20px 0 0;
+        padding: 10px 20px;
+    }
+
+    .ks-icon {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        fill: #fff;
+    }
+
+    .ks-sub,
+    .ks-title {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .ks-title {
+        margin: 0 25px;
+    }
+
+    .ks-sub {
+        position: relative;
+
+        &::before {
+            content: '-';
+            position: absolute;
+            left: -18px;
+        }
+    }
+
+    .ks-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        background-color: $fade-color;
+        padding: 20px;
+    }
+
+    .ks-footer {
+        background-color: $main-color;
+        height: 30px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .ks-setting-box {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: $main-color;
+        box-shadow: 2px 5px 16px 1px rgba(0, 0, 0, 0.7);
+
+        .ks-name {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 2px;
+            color: #fff;
+        }
+
+        .ks-input {
+            margin-left: 5px;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+
+            + .ks-name {
+                margin-top: 5px;
+            }
+        }
+
+        .ks-desc {
+            font-size: 11px;
+            margin: 0 0 5px 5px;
+            line-height: 12px;
+            color: #ddd;
+        }
+    }
+
+    .ks-multi-input {
+        background-color: #fff;
+        padding: 3px;
+
+        .ks-input-box {
+            display: inline;
+            position: relative;
+            margin-right: 3px;
+        }
+
+        .ks-input {
+            background-color: $fade-color;
+        }
+
+        .ks-remove {
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            width: 20px;
+            position: absolute;
+            right: 0;
+            margin: 3px;
+            height: 20px;
+        }
+    }
+}
+
+@media (max-width: 1700px) {
+    .ks-box {
+        .ks-content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .ks-box {
+        .ks-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .ks-box {
+        .ks-content {
+            grid-template-columns: 1fr;
+        }
+    }
+}

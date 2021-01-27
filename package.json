@@ -1,0 +1,14 @@
+{
+  "name": "howtomake-links",
+  "version": "1.0.0",
+  "description": "This is a plugin that automatically creates internal links throughout your wordpress site.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Kraggle",
+  "license": "MIT"
+}

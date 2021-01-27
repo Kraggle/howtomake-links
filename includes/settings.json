@@ -1,0 +1,48 @@
+{
+	"wrap": {
+		"element": "div",
+		"attrs": {
+			"class": "ks-setting-box"
+		}
+	},
+	"settings": [{
+		"elements": [{
+			"element": "span",
+			"attrs": {
+				"class": "ks-name"
+			},
+			"text": "Post Types to Scrape"
+		},{
+			"element": "span",
+			"attrs": {
+				"class": "ks-desc"
+			},
+			"text": "This should contain at least one 'post type', all types should be seperated by a comma."
+		},{
+			"element": "div",
+			"attrs": {
+				"id": "ks_post_types",
+				"class": "ks-multi-input "
+			},
+			"children": [{
+				"element": "div",
+				"attrs": {
+					"class": "ks-input-box"
+				},
+				"children": [{
+					"element": "input",
+					"attrs": {
+						"class": "ks-input",
+						"type": "text"
+					}
+				},{
+					"element": "span",
+					"attrs": {
+						"class": "ks-remove"
+					},
+					"text": "X"
+				}]
+			}]
+		}]	
+	}]
+}
